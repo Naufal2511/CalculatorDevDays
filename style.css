@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-center{
+    text-align: center ; 
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    height: 70vh ;
+    border: 2px solid black ;
+    border-radius: 20px ;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    width: 60vw ;
+    margin: 10px auto ;
+    padding: 10px ;
+    display: grid ; 
+    /* background-color: aqua; */
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+.container > button{
+    outline :none ;
+    border-radius: 3px ;
+    font-size: large; 
+    border: 1px solid black;
+    margin: 1px ;
+}
+.container >button:hover{
+    box-shadow: lightgray;
+    font-size: x-large ;
+    opacity: 0.9 ;
+}
+#result{
+    border: 1px solid black ;
+    border-radius: 10px ;
+    margin: 2px 0 ;
+    padding: 20px ;
+    font-size: xx-large ;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray ;
+    grid-column: 1/ span 4 ;
+    grid-row: 1 ;
+}
+#add,#subtract,#multiply,#divide,#sin,#cosine,#tan,#natlog{
+    background-color: black ;
+    color: white ;
+}
+#equals{
+    grid-row: 4/ span 6 ;
+    grid-column: 4 ;
+    background-color: rgb(207, 129, 25) ; 
+}
